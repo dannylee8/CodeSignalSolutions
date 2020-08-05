@@ -1,0 +1,19 @@
+function mergeStrings(s1, s2) {
+    
+    let t1 = s1
+    let t2 = s2
+    
+    let t1dupes = 0;
+    let t2dupes = 0;
+    
+    t1.split('').sort();
+    t2.split('').sort();
+    
+    console.log(t1,t2)
+    
+    let results = t1.split('').forEach(c => {
+        return t1.split('').filter(ch => ch == c)
+    })
+    
+    console.log(results)
+} 
